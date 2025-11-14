@@ -21,5 +21,5 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 # Annotate bars with exact numbers
 for i, val in enumerate(asr):
     plt.text(i, val + 0.005, f"{val:.2f} ({counts[i]})", ha='center')
-
+plt.savefig("asr_comparison.png", dpi=300, bbox_inches='tight')
 plt.show()
